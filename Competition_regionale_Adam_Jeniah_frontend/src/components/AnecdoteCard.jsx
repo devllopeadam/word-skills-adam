@@ -24,7 +24,7 @@ export default function AnecdoteCard({ id, title, content, votes = {}, category,
 
     if (!token) {
       navigate('/login');
-      return;
+      return;s
     }
 
     setIsVoting(true);
