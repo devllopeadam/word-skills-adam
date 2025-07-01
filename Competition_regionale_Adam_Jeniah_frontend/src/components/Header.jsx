@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import wowLogo from '../assets/wow-logo.svg';
-import api from '../config';
+import api from "../api";
 
 export default function Header({ selectedFilter, onFilterChange, onAnecdoteAdded }) {
   const navigate = useNavigate();

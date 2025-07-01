@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import bofIcon from '../assets/bof.png';
-import excellentIcon from '../assets/excellent.png';
-import techniqueIcon from '../assets/technique.png';
-import wowIcon from '../assets/wow.png';
-import api from '../config';
+import bofIcon from "../assets/icons/bof.png";
+import excellentIcon from "../assets/icons/excellent.png";
+import techniqueIcon from "../assets/icons/technique.png";
+import wowIcon from "../assets/icons/wow.png";
+import api from "../api";
 
 export default function AnecdoteCard({ id, title, content, votes = {}, category, created_at = new Date().toISOString(), author, onVoteSuccess }) {
   const navigate = useNavigate();
